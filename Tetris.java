@@ -14,6 +14,8 @@ public class Tetris extends JFrame{
 		add(statusBar, BorderLayout.SOUTH);
 		Board board = new Board(this);
 		add(board);
+		// line down start
+		board.start();
 		
 		// add one piece
 		board.newPiece();
@@ -32,6 +34,10 @@ public class Tetris extends JFrame{
 		Tetris myTetris = new Tetris();
 		myTetris.setLocationRelativeTo(null); // Center
 		myTetris.setVisible(true);
-		// now we can check
+		// now we can check our tetris board with one piece but no interaction...
+		// in part 2 we are going to add lines down !!
+		
+		// we can try lines down on my tetris now ! - end of step 2
+		// in step 3 we will add interactions to play!
 	}
 }
